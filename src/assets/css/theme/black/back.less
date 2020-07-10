@@ -1,0 +1,225 @@
+//全局公共组件变量
+//设备树
+@deviceTree-bg: rgba(4, 20, 43, 0.8); // 弹窗背景
+@deviceTree-title-color:#3FAFFF;//标题颜色
+@deviceTree-line-color: #11347A;//间隔线
+@deviceTree-tool-color: @text-explain-color; //选择工具默认颜色
+@deviceTree-tool-color-active: @text-color; //选择工具选中颜色
+@deviceTree-triangle-border-color:#3FAFFF; //三角形border颜色
+@deviceTree-checkbox-bg: @main-bg;
+@deviceTree-checkbox-bg-sel:#2d8cf0;
+@deviceTree-checkbox-bg-half: @main-bg;
+@deviceTree-checkbox-color: #fff;
+@deviceTree-checkbox-color-half: #2d8cf0;
+@deviceTree-text-color: @text-color;
+@deviceTree-text-color-active: #3FAFFF;
+@deviceTree-ico-color: #568BBF;
+@deviceTree-color-hover: #3fafff; //树移入高亮
+
+//公共组件变量
+//地图基础组件
+@mapBase-head-shadow: rgba(0, 0, 0, 0.3);
+@mapBase-tool-border: #D9D9D9;
+@mapBase-toolBox-bg: rgba(17, 52, 122, 0.8);
+@mapBase-toolBox-border: #0070C0;
+@mapBase-toolBox-color: #3FAFFF;
+@mapBase-cluster-bg: rgba(1, 139, 168, 0.6); //聚合外圈背景色
+@mapBase-cluster-inside-bg: rgba(0, 52, 62, 0.8); //聚合内圈背景色
+@mapBase-cluster-inside-bg-hover: rgba(1, 139, 168, 0.8);
+@mapBase-cluster-border: #018ba8;
+@mapBase-cluster-color: #0070C0;
+
+//图片局部放大组件
+@magnifyingImg-bg: rgba(0, 0, 0, 0.5);
+
+//图片全屏居中放大组件
+@img-detail-bg: rgba(0, 0, 0, 0.7);
+
+//删除组件
+@deleteModal-bg: @error-color;
+@deleteModal-color: #FFF;
+
+//详情组件(注册、抓拍、报警)
+@detailDialog-title-color: #3FAFFF; //弹框标题
+@detailDialog-bg: rgba(4, 20, 43, 0.8); //弹框背景色
+@detailDialog-info-bg: #041A4B; //rgba(21, 46, 99, 0.5); //信息背景色
+@detailDialog-info-border: rgba(4, 20, 43, 0.8); //信息项边框
+@detailDialog-info-type-border: #34456F; //信息分类边框
+@detailDialog-info-type-active-border: #3FAFFF; //信息分类边框
+@detailDialog-info-color: @text-color;
+@detailDialog-info-label-color: @text-explain-color;
+@detailDialog-similar-color: rgba(246, 65, 65, 0.7);
+@detailDialog-carousel-bg: #041A4B; //轮播图背景
+@detailDialog-carousel-border-active: #0070C0; //弹出框轮播图高亮
+@detailDialog-arrow-color: #2790DB;//详情框箭头
+@detailDialog-arrow-color-hover : #3FAFFF;//详情框箭头hover
+@detailDialog-arrow-color-disabled: #666;//详情框禁止
+@detailDialog-img-bg: #041A4B;//全景框背景
+@detailDialog-face-tag-border: #00BABA;//详情标注人脸框颜色
+@detailDialog-empty-color: @text-color; //空提示文字色
+//报警弹框研判按钮
+@detailDialog-alarm-btn-yes-color            :#ee3840;
+@detailDialog-alarm-btn-yes-hover            :rgba(238, 56, 64, 0.2);
+@detailDialog-alarm-btn-deny-color           :#41b721;
+@detailDialog-alarm-btn-deny-hover           :rgba(65, 183, 33, 0.2);
+@detailDialog-alarm-btn-doubt-color          :#f2ad18;
+@detailDialog-alarm-btn-doubt-hover          :rgba(242, 173, 24, 0.2);
+//人体框颜色
+@detailDialog-selector-face                  : #ee3840;
+@detailDialog-selector-body                  : #00baba;
+@detailDialog-selector-vehicle               : #f2ad18;
+@detailDialog-selector-nonVehicle            : #1c60f9;
+
+
+
+//实时报警框(右下角)
+@faceAlarmTip-color: @text-color;
+@faceAlarmTip-title-color: #FFF;
+@faceAlarmTip-arrow-color: #3FAFFF;
+@faceAlarmTip-img-border:#30c4ff; //图片边框
+@faceAlarmTip-img-shadow:rgba(3, 3, 3, 0.5); //图片边框
+@faceAlarmTip-img-arrow-bg:linear-gradient(to right, rgba(17, 52, 122, 1), rgba(17, 52, 122, 0.2)); //图片前装饰符号背景色
+@faceAlarmTip-desc-bg:linear-gradient(to right, rgba(18, 109, 179, 1), rgba(18, 109, 179, 0),rgba(18, 109, 179, 0)); //渐变背景1
+@faceAlarmTip-time-bg:linear-gradient(to right, rgba(17, 52, 122, 1), rgba(17, 52, 122, 0));//渐变背景2
+@faceAlarmTip-line-bg:linear-gradient(to right, #30c4ff, transparent); //渐变间隔线
+@faceAlarmTip-similar-bg: rgba(246, 65, 65, 0.7);
+@faceAlarmTip-info-bg: #152e63;
+
+//划线组件
+@svgDrawLine-tool-bg: rgba(0, 0, 0, 0.75);
+
+//-----------------------------------back-------------------------
+//公共样式变量
+@b-dialog-height: @dialog-height;  //dialog 1920内容最大高度
+@b-dialog-height-min: @dialog-height-min;  //dialog 1366内容最大高度(不使用自适应)
+@b-view-active-hover: @text-color; //公共样式(输入项 输入框内图标高亮,re-component)
+
+
+//公共组件变量
+//后台Header菜单
+@b-header-sub-menu-color: @text-explain-color; //右侧菜单文字
+@b-header-sub-menu-color-hover: #3FAFFF;
+//后台main-Header菜单
+@b-mainHeader-bg: #1D3B78;
+@b-mainHeader-color: #FFF;
+@b-mainHeader-title-bg: #2C4B8A;
+@b-mainHeader-title-arrow-bg: #1D3B78;
+@b-mainHeader-title-color: #FFF;
+@b-mainHeader-sub-color: @text-explain-color; //右侧菜单文字
+@b-mainHeader-sub-color-hover: #3fafff;
+
+//检索公共组件
+@b-menuFilterTable-bg: @main-sub-color; //检索框
+@b-menuFilterTable-border-radius: @border-radius-medium;
+@b-menuFilterTable-font-size: @font-size-base;
+@b-menuFilterTable-title-bg: #20325E; //检索框标题
+@b-menuFilterTable-title-color: @text-color;
+@b-menuFilterTable-title-color-disabled: fade(@text-color, 70%);
+@b-menuFilterTable-title-font-size: @font-size-medium;
+@b-menuFilterTable-table-btn-line: #3FAFFF; //@btn-info-color;表格间按钮间隔线,颜色应与文字按钮色保持一致,规范不允许套用
+
+//离线视频上传
+@b-offlineVideoUpload-border: @line-color;
+@b-offlineVideoUpload-title-bg: #20325e;
+@b-offlineVideoUpload-title-color: #568BBF;
+@b-offlineVideoUpload-btn-border: #1D568F; //定位按钮边框
+@b-offlineVideoUpload-upload-color: #568BBF;
+@b-offlineVideoUpload-upload-border: #2790db;
+@b-offlineVideoUpload-list-border: #34456F; //视频列表边框
+@b-offlineVideoUpload-progress-bg: rgba(180, 215, 240, 0.3);
+@b-offlineVideoUpload-progress-bg-active: @success-sub-color;
+@b-offlineVideoUpload-color: @text-color;
+@b-offlineVideoUpload-sub-color: @text-explain-color;
+@b-offlineVideoUpload-close-color: #3FAFFF;
+
+//地图标记点选择
+@b-mapLnglat-color: @text-color;
+@b-mapLnglat-bg: rgba(0, 0, 0, 0.4);
+
+//地图区域选择
+@b-mapAreaSelect-ico-color: #FFF; //标注点图标颜色
+
+//页面变量
+//密码管理
+@b-passwordManage-bg: @main-sub-color;
+@b-passwordManage-slider-border: @line-sub-color;
+@b-passwordManage-slider-bg: #999;
+@b-passwordManage-slider-low: @error-color;
+@b-passwordManage-slider-middle: @warning-color;
+@b-passwordManage-slider-high: @success-color;
+
+//个人资料
+@b-profileContent-left-bg: #131d49;
+@b-profileContent-rigth-bg: @main-sub-color;
+
+//我的消息页面
+@b-message-border-color:@page-btn-border-active;//消息列表边框颜色
+@b-message-bg:@slider-bg-active;//消息列表背景颜色
+
+//收藏管理页面
+@b-card-text-acitve:@dropdoum-color-active;//收藏列表卡片背景色
+@b-card-border-color:@text-color;//收藏列表卡片边框颜色
+@b-card-radio-bg:#7E7E7E;//收藏卡片列表radio边框，背景颜色
+@b-card-list-border-color:@btn-text-color;//收藏列表icon边框颜色
+@b-card-icon-group-li-bg:rgba(12, 31, 71, 0.8);//收藏列表icon-group边框颜色
+@b-card-txt-hover-color:@btn-bg-hover;//收藏卡片文字颜色
+@b-card-outer-border-color:#3FAFFF;//收藏卡片边框
+@b-card-icon-color:#3fafff;//收藏卡片icon颜色
+@b-card-icon-bg:#3fafff;//收藏卡片icon背景颜色
+@b-card-bg:#010E2E;//收藏卡片背景颜色
+@b-collection-bg:@table-bg;//收藏背景颜色
+
+//区域管理
+@b-districtManage-tree-border-color:@btn-plain-bg;//区域管理边框色
+@b-districtManage-input-border-color:#2790DB;//区域管理输入框边框色
+@b-districtManage-searchIco-color:@text-explain-color;//区域搜索图标
+@b-districtManage-title-font-size: 16px;//区域管理title大小
+@b-districtManage-tree-focus-font-color:#3FAFFF;//区域管理选中项字体色
+
+//导入结果
+@b-importModelResult-success-font-color:#36af47;//成功
+@b-importModelResult-fail-font-color:#f35d47;//失败
+@b-importModelResult-sub-title-bg:@slider-bg-active;//次标题背景
+@b-importModelResult-upload-tag-bg:#0D275C;//上传组件hover背景颜色
+@b-importModelResult-radio-label-hover-color:#3FAFFF;//radio-label的hover颜色
+@b-importModelResult-radio-label-checked-color:#3FAFFF;//radio-label的checked颜色
+@b-importModelResult-progress-bar-outer-bg:#B4D7F0;//进度条的滑动槽颜色
+@b-importModelResult-progress-bar-inner-bg:#1ebe84;//进度条的滑动槽完成进度颜色
+
+//OEM管理
+@b-OEM-title-color: #3fafff;
+@b-OEM-bg: #20325e;
+
+//水印管理
+@b-waterMark-title-color: #3fafff;
+
+//归档管理
+@b-fileManage-header-bg-color : #20325E;//归档header背景色
+@b-fileManage-border-color : #34456F;//归档边框
+@b-fileManage-tabs-nav-active-bg-color : #20325E;//归档切换选中背景色
+@b-fileManage-tabs-nav-active-color : #3fafff;//归档切换选中字体色
+@b-fileManage-tabs-bg-color : #142650;//归档切换背景色
+
+//区域管理
+@b-districtManage-bg-color : #142650;//区域管理背景色
+@b-districtManage-header-bg-color : #20325E;//区域header背景色
+@b-districtManage-header-color : #5A90C7;//区域管理header字体色
+
+//设备添加
+@b-cameraManageEdit-highSearch-color : #2790DB;//新增设备高级搜索
+//设备导入
+@b-cameraImport-status-color : #04142b;//设备导入状态字体
+//场景管理
+@b-sceneModel-placeholder-color : #2790DB;//场景管理placeholder
+@b-sceneModel-tag-wrap-color : #2790DB;//场景管理div模拟按钮字体色
+@b-sceneModel-tag-wrap-bg-color : #11347A;//场景管理div模拟按钮背景色
+
+//报警配置编辑
+@b-alarmconfigEdit-upload-border-color : #2790DB;//报警配置下载边框
+
+//上传文件
+@b-import-model-radio-label-hover-color:#3FAFFF;//radio-label的hover颜色
+@b-import-model-radio-label-checked-color:#3FAFFF;//radio-label的checked颜
+
+//新建车辆库
+@b-vehiclesAdd-color:#11347A;//上传文件表单文字颜色

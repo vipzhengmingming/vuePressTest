@@ -1,0 +1,315 @@
+@import './back.less';
+@import './front.less';
+
+// 注：此文件下的变量，是公共组件里的变量（切记）
+//-------------------------------------------基础-------------------------------------------
+@main-color: #2790DB; //主色(主按钮/可点击)
+@main-sub-color: #142650; //主面板/表格/弹窗
+@main-bg: #010E2E; //背景色
+
+@info-color: #2790DB; //辅助色info(如表格中标识状态)
+@info-sub-color: #1991EB;
+@success-color: #41B721; //辅助色success
+@success-sub-color: #36AF47;
+@warning-color: #F2AD18; //辅助色warning
+@warning-sub-color: #F7981C;
+@error-color: #EE3840; //辅助色error
+@error-sub-color: #F35D47;
+
+@text-color: #B4D7F0; //正文
+@text-color-disabled: fade(@text-color, 50%);
+@text-color-active: #3FAFFF; //正文高亮
+@text-explain-color: #568BBF; //辅助文字/注释字
+@text-explain-sub-color: #999999;
+@invalid-color: #353D49; //失效
+@link-color: #3FAFFF; //链接文字<a>标签
+@link-color-active: #B4D7F0;
+
+@line-color: #253969; //边框、分割线
+@line-sub-color: #0070C0;
+
+@base-input-bg: #010E2E;
+@base-input-bg-disabled: fade(@base-input-bg, 50%);
+
+@font-size-large: 18px;
+@font-size-medium: 16/192rem;
+@font-size-base: 14/192rem; //正文大小
+@font-size-small: 12px;
+
+@border-radius-medium: 5px; //背景
+@border-radius-small: 4px; //按钮
+
+
+//新增基础变量
+@dialog-bg            : #041A4B; // 对话框背景色
+
+//-------------------------------------------组件-------------------------------------------
+//主检索
+@btn-font-size: @font-size-base;
+@btn-text-color: #FFF;
+@btn-text-color-disabled: fade(@btn-text-color, 25%);
+@btn-bg: @main-color;
+@btn-bg-hover: #3FAFFF;
+@btn-bg-active: #1169A8;
+@btn-bg-disabled: fade(@btn-bg, 50%);
+//次级(重置)
+@btn-sub-text-color: @text-explain-color;
+@btn-sub-text-color-disabled: fade(@btn-sub-text-color, 25%);
+@btn-sub-bg: #0D1B3B;
+@btn-sub-bg-hover: #103173;
+@btn-sub-bg-active: #0A2255;
+@btn-sub-bg-disabled: fade(@btn-sub-bg, 50%);
+//次次级按钮(新建)
+@btn-plain-color: #3FAFFF;
+@btn-plain-color-hover: #FFF;
+@btn-plain-color-active: #FFF;
+@btn-plain-bg: #0D275C;
+@btn-plain-bg-hover: #30C4FF;
+@btn-plain-bg-active: #1169A8;
+@btn-plain-bg-disabled: fade(@btn-plain-bg, 50%);
+@btn-plain-color-disabled: fade(@btn-plain-color, 25%);
+@btn-plain-border-color: #1D568F;
+@btn-plain-border-color-hover: #30C4FF;
+@btn-plain-border-color-active: #1169A8;
+@btn-plain-border-color-disabled: fade(@btn-plain-border-color, 50%);
+//文字按钮
+@btn-info-color: #3FAFFF;
+@btn-info-color-hover: #B4D7F0;
+@btn-info-color-active: #1169A8;
+@btn-info-color-disabled: fade(@btn-info-color, 25%);
+
+//单选框-普通
+@radio-color: @text-color;
+@radio-color-disabled: @text-color-disabled;
+@radio-bg: @base-input-bg;
+@radio-bg-disabled: @base-input-bg-disabled;
+@radio-bg-active: #2790DB; //radio中间圆点样式(选中active状态下)
+@radio-bg-active-disabled: rgba(29,86,143,0.5);
+@radio-border: #1D568F;
+@radio-border-disabled: fade(#1D568F,50%);
+@radio-border-active: #2790DB;  //radio边框样式(选中active状态下)
+@radio-border-active-disabled: fade(#2790DB,50%);  //radio边框样式(选中active状态下)
+//单选框-多选功能(如卡片右上角选择)
+@radio-check-ico-color: #FFF; //中间打勾图标
+@radio-check-bg: #1D568F;
+@radio-check-bg-active: #41B721;
+//单选框-组
+@radio-group-bg: @base-input-bg;
+@radio-group-color: @text-explain-color;
+@radio-group-color-hover: @text-color;
+@radio-group-color-active: @text-color;
+@radio-group-item-border: #1c3770;//项边框
+@radio-group-item-border-active: #2790DB;//选中项边框
+
+//多选框
+@checkbox-color: @text-color;
+@checkbox-color-active: @text-color;
+@checkbox-color-disabled: @text-color-disabled;
+@checkbox-bg: @base-input-bg;
+@checkbox-bg-active: #2790DB; //选中状态下的背景
+@checkbox-ico-color: #FFF;
+@checkbox-ico-color-disabled: fade(#1D568F, 80%); //禁止图标，与border颜色一致
+@checkbox-border: #1D568F;
+@checkbox-border-active: @checkbox-bg-active;
+@checkbox-border-radius: @border-radius-small;
+
+//开关
+@switch-bg: #1C3770;
+@switch-bg-disabled: fade(#1C3770,50%);
+@switch-bg-active: #2790DB;
+@switch-bg-active-disabled: fade(#2790DB,50%);
+@switch-border-color: #1D568F;
+@switch-border-color-disabled: fade(#1D568F,50%);
+@switch-border-color-active: #ransparent;
+@switch-border-color-active-disabled: transparent;
+@switch-ico-color: #FFF;
+@switch-ico-color-disabled: fade( #FFF,50%);
+
+//输入框
+@input-bg: @base-input-bg;
+@input-bg-disable: @base-input-bg-disabled;
+@input-color: @text-color;
+@input-color-disable: @text-color-disabled;
+@input-color-error: @error-color;
+@input-placeholder-color: @text-explain-color;
+@input-placeholder-color-disable: fade(@input-placeholder-color, 25%);
+@input-border: @base-input-bg;
+@input-border-hover: #0070C0;
+@input-border-focused: #0070C0;
+@input-border-error: @error-color;
+@input-icon-color: #1D568F;
+@input-icon-color-disabled: fade(@input-icon-color, 25%);
+@input-group-border: #253969; //输入框前后有select等内容，边框颜色
+
+//计数器
+@InputNumber:red;
+
+//选择器
+@select-input-ico-color: @text-explain-color;//下拉箭头
+@select-input-ico-color-disable: rgba(86,139,191,0.5);//下拉箭头
+
+//下拉选择器
+@dropdoum-bg: #010E2E; //下拉框背景
+@dropdoum-bg-shadow: rgba(0, 0, 0, 0.6); //下拉框背景
+@dropdoum-color: @text-color; //默认文字颜色
+@dropdoum-color-active: @text-color-active; //选中项
+@dropdoum-item-bg-hover: #142650; //下拉项高亮
+@dropdoum-item-color-hover: @text-color-active; //下拉项文字高亮
+@dropdoum-item-font-size: @font-size-medium;
+
+//tag标签
+@tag-bg: rgba(13,39,92,0.4);
+@tag-color: @text-color;
+@tag-close-color: @text-explain-color; //tag关闭颜色
+@tag-close-color-hover: @text-color;
+@tag-border: #1C3770;
+@tag-border-radius: @border-radius-small;
+
+//时间选择器
+@datepicker-panel-bg: #010E2E;
+@datepicker-panel-bg-shadow: rgba(0, 0, 0, 0.6);
+@datepicker-panel-color: @text-color; //可操作部分字体颜色
+@datepicker-panel-color-active: #2790DB; //选中日期
+@datepicker-panel-explain-color: @text-explain-color; //标注文字(如 日期)
+@datepicker-panel-border: #253969;
+@datepicker-panel-bg-active: #072148; //选中日期
+@datepicker-panel-bg-sub-active: #072148; //选中日期中间段背景
+@datepicker-panel-ico-color: #2790DB; //前后图标按钮
+@datepicker-panel-ico-color-hover: #B4D7F0; //可操作部分颜色
+
+@time-panel-bg: #010E2E;
+@time-panel-bg-shadow: rgba(0, 0, 0, 0.6); //下拉框背景
+@time-panel-color: @text-explain-color; //时分框 可操作部分颜色
+@time-panel-color-disabled: fade(@text-explain-color,25%);; //禁止可操作部分颜色
+@time-panel-time-color-active: @text-color; //时分框：选中日期
+@time-panel-date-color-active: @text-color-active; //日期框：当前日期(无背景)
+@time-panel-date-color-checked: #FFF;//日期框：选中颜色(带背景项)
+@time-panel-date-bg-checked: @text-color-active;//日期框：选中背景
+@time-panel-border: #253969;
+@time-panel-bg-item-hover: #072148; //选择项移入颜色
+@time-panel-btn-color: #568BBF;
+
+//颜色选择器
+@colorpicker-input-border: @base-input-bg;
+@colorpicker-bg: #20325E;
+@colorpicker-panel-bg-shadow: rgba(0, 0, 0, 0.6);
+
+//表单
+@form-lable-color: @text-explain-color;
+
+//表格
+@table-bg: #142650;
+@table-title-color: @text-explain-color; //表格标题颜色
+@table-color: @text-color; //表格正文颜色
+@table-line-color: @line-color;//分割线
+@table-th-bg: #20325E;
+@table-th-color: @text-explain-color;
+@table-tr-bg: #142650; //表格单行背景色
+@table-tr-bg-hover: #0D1B3B; //表格单行移入色
+@table-font-size: @font-size-base;
+
+
+//分页
+@page-color: #5A90C7;
+@page-btn-color: #A8B4C9; //按钮文字颜色
+@page-btn-ico-color: @text-color-active; //左右箭头颜色
+@page-btn-color-hover: #FFF;
+@page-btn-border: #1C3770;
+@page-btn-border-hover: #0070C0;
+@page-btn-bg-active: #11347A;
+@page-btn-border-active: #11347A;
+@page-select-border-hover: #0070C0;
+
+//徽标
+@badge-bg: #E64A19;
+@badge-color: #FFF;
+
+//Tabs标签页
+@tabs-color: rgba(180,215,240,0.75);
+@tabs-color-hover: @text-color-active;
+@tabs-color-active: @text-color-active;
+@tabs-border: @line-sub-color;
+@tabs-border-active: #3FAFFF;
+@tabs-content-color: @text-color;
+ //卡片类型
+@tabs-card-color: @text-explain-color;
+@tabs-card-color-hover: @text-color;
+@tabs-card-color-active: @text-color;
+@tabs-card-border: @line-color;
+@tabs-card-border-active: #142650;
+
+//加载
+@loading-bg: rgba(0,0,0,.7);
+
+//树
+@tree-color: @text-color;
+@tree-color-hover: @text-color-active;
+@tree-bg: transparent;
+@tree-node-bg-hover: transparent;
+@tree-node-bg-focus: transparent;
+
+//消息提示
+@msg-color: #FFF;
+@msg-ico-color: rgba(255,255,255,0.7);
+@msg-ico-font-size: 20px;
+@msg-info-bg: fade(@info-color,90%);
+@msg-info-border: @info-color;
+@msg-success-bg: fade(@success-color,90%);
+@msg-success-border: @success-color;
+@msg-warning-bg: fade(@warning-color,90%);
+@msg-warning-border: @warning-color;
+@msg-error-bg: fade(@error-color,90%);
+@msg-error-border: @error-color;
+
+//弹框
+@dialog-color: @text-color;
+@dialog-bg: #142650;
+@dialog-line: #34456F; //标题/页尾分割线
+@dialog-title-font-size: @font-size-base;
+@dialog-close-ico-color: @btn-info-color;
+@dialog-close-ico-color-hover: @btn-info-color-hover;
+@dialog-height: 566/192rem;  //dialog 1920内容最大高度
+@dialog-height-min: 400px;  //dialog 1366内容最大高度(不使用自适应)
+@dialog-tips-color:red;//弹窗提示tips的颜色
+@dialog-subtitle-bg:@colorpicker-bg;//弹窗副标题的背景颜色
+
+//询问框
+@confirm-color: @text-color;
+@confirm-bg: @main-sub-color;
+@confirm-border: @main-sub-color;
+@confirm-border-radius: @border-radius-medium;
+
+//分割线
+@divider-color: @line-color;
+
+//上传组件
+@upload-bg: @main-bg;
+@upload-bg-hover: yellow;
+@upload-border-color: @line-color;
+@upload-border-color-hover: @line-sub-color;
+
+//滑块
+@slider-bg: #0070C0; //滑块线背景色
+@slider-bg-active: #041A4B; //滑块线背景色
+@slider-marks-text: @text-explain-color; //标注文字
+@slider-btn-bg: #FFF; //滑块圆圈背景
+@slider-btn-border: #3FAFFF; //滑块圆圈边框
+
+//菜单
+@menu-bg: transparent;
+@menu-color: #FFF;
+@menu-color-active: @text-color-active;
+@menu-border-active: #3FAFFF;
+@menu-item-bg: #1D3B78;
+@menu-item-color: @text-color;
+@menu-item-color-active: @text-color-active;
+
+//滚动条样式（谷歌）
+@scroll-background-color:#0C1E4A; //滚动条凹槽背景色
+@scroll-line-color: @switch-bg; //滚动条的颜色
+@scroll-track-box-shadow: rgba(0,0,0,0.2); //滚动条里面轨道的阴影的颜色
+@scroll-track-background-color: rgba(0,0,0,0.1); //滚动条里面轨道的颜色
+
+//提示框
+@popover-arrow-bg     : rgba(1, 14, 46, 0.7); // popover 三角箭头背景色
+@popover-solid-bg     : rgba(1, 14, 46, 1); // popover 三角箭头背景色

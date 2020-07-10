@@ -1,0 +1,384 @@
+@f-body-bg: #031030; // 前台页面body背景色
+@f-other-text-color: #568BBF; // 其他文字颜色
+@f-text-active: #3FAFFF; // 文字当前颜色
+@f-border-radius: 8px; // 圆角
+@f-tabs-bg: #152E63; // tabs背景色
+@f-card-bg: #092564; // 卡片背景色
+@f-similar-bg: rgba(246, 65, 65, 0.7); // 相似度背景色
+@f-start-color: #70dfff; // 渐变开始颜色
+@f-end-color: #1169A8; // 渐变结束颜色
+@f-font-color: #B4D7F0; // 前台基本文字颜色
+@f-font-active-color: #73dfff; // 前台當前文字颜色
+@f-border-color: #0070C0; // 前台特殊边框颜色
+@f-input-border-color: #1C3770; // 输入框，下拉框，日期边框
+@f-lable-day-color: rgba(86, 139, 191, 1); // 时间选择器快捷方式文字颜色
+@f-icon-color:#11347A;//图标颜色
+
+@f-btn-search-height: 35px; // 搜索区域按钮高度
+@f-filter-input-hover-border:#0070C0;//输入框hover下的边框样式
+@f-text-bg-hover: #3FAFFF; // 文字图标悬浮背景色
+@f-text-hover-color: #fff; // 文字图标字体悬浮色
+@f-primary-color: #3FAFFF;//  前台主要颜色
+
+
+
+// ===================================新变量(只用于前台)-start==========================================
+
+//-------------------------------------------基础-------------------------------------------
+@f-main-color: #2790DB; //主色(主按钮/可点击)
+@f-main-sub-color: #142650; //主面板/表格/弹窗
+@f-main-bg: #041A4B; //背景色
+
+@f-info-color: #2790DB; //辅助色info(如表格中标识状态)
+@f-info-sub-color: #1991EB;
+@f-success-color: #41B721; //辅助色success
+@f-success-sub-color: #36AF47;
+@f-warning-color: #F2AD18; //辅助色warning
+@f-warning-sub-color: #F7981C;
+@f-error-color: #EE3840; //辅助色error
+@f-error-sub-color: #F35D47;
+
+@f-text-color: #B4D7F0; //正文
+@f-text-color-disabled: fade(@f-text-color, 50%);
+@f-text-color-active: #3FAFFF; //正文高亮
+@f-text-explain-color: #568BBF; //辅助文字/注释字
+@f-text-explain-sub-color: #999999;
+@f-invalid-color: #353D49; //失效
+@f-link-color: #3FAFFF; //链接文字<a>标签
+@f-link-color-active: #B4D7F0;
+
+@f-line-color: #253969; //边框、分割线
+// @f-border-color: #3FAFFF; //边框、分割线
+@f-line-sub-color: #0070C0;
+@f-line-other-color: #11347A; //其他边框线
+@f-base-input-bg: #010E2E;
+@f-base-input-bg-disabled: fade(@f-base-input-bg, 50%);
+
+@f-font-size-large: 18px;
+@f-font-size-medium: 16/192rem;
+@f-font-size-base: 14/192rem; //正文大小
+@f-font-size-small: 12px;
+
+@f-border-radius-medium: 5px; //背景
+@f-border-radius-small: 4px; //按钮
+
+
+//新增基础样式
+@f-title-border-color:#8CC7F2; // 标题左侧的border颜色
+
+//-------------------------------------------组件-------------------------------------------
+//主检索
+@f-btn-font-size: @f-font-size-base;
+@f-btn-text-color: #FFF;
+@f-btn-text-color-disabled: fade(@f-btn-text-color, 25%);
+@f-btn-bg: @f-main-color;
+@f-btn-bg-hover: #3FAFFF;
+@f-btn-bg-active: #1169A8;
+@f-btn-bg-disabled: fade(@f-btn-bg, 50%);
+//次级(重置)
+@f-btn-sub-text-color: @f-text-explain-color;
+@f-btn-sub-text-color-disabled: fade(@f-btn-sub-text-color, 25%);
+@f-btn-sub-bg: #0D1B3B;
+@f-btn-sub-bg-hover: #103173;
+@f-btn-sub-bg-active: #0A2255;
+@f-btn-sub-bg-disabled: fade(@f-btn-sub-bg, 50%);
+//次次级按钮(新建)
+@f-btn-plain-color: #3FAFFF;
+@f-btn-plain-color-hover: #FFF;
+@f-btn-plain-color-active: #FFF;
+@f-btn-plain-bg: #0D275C;
+@f-btn-plain-bg-hover: #30C4FF;
+@f-btn-plain-bg-active: #1169A8;
+@f-btn-plain-bg-disabled: fade(@f-btn-plain-bg, 50%);
+@f-btn-plain-color-disabled: fade(@f-btn-plain-color, 25%);
+@f-btn-plain-border-color: #1D568F;
+@f-btn-plain-border-color-hover: #30C4FF;
+@f-btn-plain-border-color-active: #1169A8;
+@f-btn-plain-border-color-disabled: fade(@f-btn-plain-border-color, 50%);
+//文字按钮
+@f-btn-info-color: #3FAFFF;
+@f-btn-info-color-hover: #B4D7F0;
+@f-btn-info-color-active: #1169A8;
+@f-btn-info-color-disabled: fade(@f-btn-info-color, 25%);
+
+//单选框-普通
+@f-radio-color: @f-text-color;
+@f-radio-color-disabled: @f-text-color-disabled;
+@f-radio-bg: @f-base-input-bg;
+@f-radio-bg-disabled: @f-base-input-bg-disabled;
+@f-radio-bg-active: #2790DB; //radio中间圆点样式(选中active状态下)
+@f-radio-bg-active-disabled: rgba(29,86,143,0.5);
+@f-radio-border: #1D568F;
+@f-radio-border-disabled: fade(#1D568F,50%);
+@f-radio-border-active: #2790DB;  //radio边框样式(选中active状态下)
+@f-radio-border-active-disabled: fade(#2790DB,50%);  //radio边框样式(选中active状态下)
+//单选框-多选功能(如卡片右上角选择)
+@f-radio-check-ico-color: #FFF; //中间打勾图标
+@f-radio-check-bg: #1D568F;
+@f-radio-check-bg-active: #41B721;
+//单选框-组
+@f-radio-group-bg: @f-base-input-bg;
+@f-radio-group-color: @f-text-explain-color;
+@f-radio-group-color-hover: @f-text-color;
+@f-radio-group-color-active: @f-text-color;
+@f-radio-group-item-border: #1c3770;//项边框
+@f-radio-group-item-border-active: #2790DB;//选中项边框
+
+//多选框
+@f-checkbox-color: @f-text-color;
+@f-checkbox-color-active: @f-text-color;
+@f-checkbox-color-disabled: @f-text-color-disabled;
+@f-checkbox-bg: @f-base-input-bg;
+@f-checkbox-bg-active: #2790DB; //选中状态下的背景
+@f-checkbox-ico-color: #FFF;
+@f-checkbox-ico-color-disabled: fade(#1D568F, 80%); //禁止图标，与border颜色一致
+@f-checkbox-border: #1D568F;
+@f-checkbox-border-active: @f-checkbox-bg-active;
+@f-checkbox-border-radius: @f-border-radius-small;
+
+//开关
+@f-switch-bg: #1C3770;
+@f-switch-bg-disabled: fade(#1C3770,50%);
+@f-switch-bg-active: #2790DB;
+@f-switch-bg-active-disabled: fade(#2790DB,50%);
+@f-switch-border-color: #1D568F;
+@f-switch-border-color-disabled: fade(#1D568F,50%);
+@f-switch-border-color-active: #ransparent;
+@f-switch-border-color-active-disabled: transparent;
+@f-switch-ico-color: #FFF;
+@f-switch-ico-color-disabled: fade( #FFF,50%);
+
+//输入框
+@f-input-bg: @f-base-input-bg;
+@f-input-bg-disable: @f-base-input-bg-disabled;
+@f-input-color: @f-text-color;
+@f-input-color-disable: @f-text-color-disabled;
+@f-input-color-error: @f-error-color;
+@f-input-placeholder-color: @f-text-explain-color;
+@f-input-placeholder-color-disable: fade(@f-input-placeholder-color, 25%);
+@f-input-border: @f-base-input-bg;
+@f-input-border-hover: #0070C0;
+@f-input-border-focused: #0070C0;
+@f-input-border-error: @f-error-color;
+@f-input-icon-color: #1D568F;
+@f-input-icon-color-disabled: fade(@f-input-icon-color, 25%);
+@f-input-group-border: #253969; //输入框前后有select等内容，边框颜色
+
+//计数器
+@f-InputNumber:red;
+
+//选择器
+@f-select-input-ico-color: @f-text-explain-color;//下拉箭头
+@f-select-input-ico-color-disable: rgba(86,139,191,0.5);//下拉箭头
+
+//下拉选择器
+@f-dropdoum-bg: #010E2E; //下拉框背景
+@f-dropdoum-bg-shadow: rgba(0, 0, 0, 0.6); //下拉框背景
+@f-dropdoum-color: @f-text-color; //默认文字颜色
+@f-dropdoum-color-active: @f-text-color-active; //选中项
+@f-dropdoum-item-bg-hover: #142650; //下拉项高亮
+@f-dropdoum-item-color-hover: @f-text-color-active; //下拉项文字高亮
+@f-dropdoum-item-font-size: @f-font-size-medium;
+
+//tag标签
+@f-tag-bg: rgba(13,39,92,0.4);
+@f-tag-color: @f-text-color;
+@f-tag-close-color: @f-text-explain-color; //tag关闭颜色
+@f-tag-close-color-hover: @f-text-color;
+@f-tag-border: #1C3770;
+@f-tag-border-radius: @f-border-radius-small;
+
+//时间选择器
+@f-datepicker-panel-bg: #010E2E;
+@f-datepicker-panel-bg-shadow: rgba(0, 0, 0, 0.6);
+@f-datepicker-panel-color: @f-text-color; //可操作部分字体颜色
+@f-datepicker-panel-color-active: #2790DB; //选中日期
+@f-datepicker-panel-explain-color: @f-text-explain-color; //标注文字(如 日期)
+@f-datepicker-panel-border: #253969;
+@f-datepicker-panel-bg-active: #072148; //选中日期
+@f-datepicker-panel-bg-sub-active: #072148; //选中日期中间段背景
+@f-datepicker-panel-ico-color: #2790DB; //前后图标按钮
+@f-datepicker-panel-ico-color-hover: #B4D7F0; //可操作部分颜色
+
+@f-time-panel-bg: #010E2E;
+@f-time-panel-bg-shadow: rgba(0, 0, 0, 0.6); //下拉框背景
+@f-time-panel-color: @f-text-explain-color; //时分框 可操作部分颜色
+@f-time-panel-color-disabled: fade(@f-text-explain-color,25%);; //禁止可操作部分颜色
+@f-time-panel-time-color-active: @f-text-color; //时分框：选中日期
+@f-time-panel-date-color-active: @f-text-color-active; //日期框：当前日期(无背景)
+@f-time-panel-date-color-checked: #FFF;//日期框：选中颜色(带背景项)
+@f-time-panel-date-bg-checked: @f-text-color-active;//日期框：选中背景
+@f-time-panel-border: #253969;
+@f-time-panel-bg-item-hover: #072148; //选择项移入颜色
+@f-time-panel-btn-color: #568BBF;
+
+
+//颜色选择器
+@f-colorpicker-input-border: @f-base-input-bg;
+@f-colorpicker-bg: #20325E;
+@f-colorpicker-panel-bg-shadow: rgba(0, 0, 0, 0.6);
+
+//表单
+@f-form-lable-color: @f-text-explain-color;
+
+//表格
+@f-table-bg: #142650;
+@f-table-title-color: @f-text-explain-color; //表格标题颜色
+@f-table-color: @f-text-color; //表格正文颜色
+@f-table-line-color: @f-line-color;//分割线
+@f-table-th-bg: #20325E;
+@f-table-th-color: @f-text-explain-color;
+@f-table-tr-bg: #142650; //表格单行背景色
+@f-table-tr-bg-hover: #0D1B3B; //表格单行移入色
+@f-table-font-size: @f-font-size-base;
+
+
+//分页
+@f-page-color: #5A90C7;
+@f-page-btn-color: #A8B4C9; //按钮文字颜色
+@f-page-btn-ico-color: @f-text-color-active; //左右箭头颜色
+@f-page-btn-color-hover: #FFF;
+@f-page-btn-border: #1C3770;
+@f-page-btn-border-hover: #0070C0;
+@f-page-btn-bg-active: #11347A;
+@f-page-btn-border-active: #11347A;
+@f-page-select-border-hover: #0070C0;
+
+//徽标
+@f-badge-bg: #E64A19;
+@f-badge-color: #FFF;
+
+//Tabs标签页
+@f-tabs-color: rgba(180,215,240,0.75);
+@f-tabs-color-hover: @f-text-color-active;
+@f-tabs-color-active: @f-text-color-active;
+@f-tabs-border: @f-line-sub-color;
+@f-tabs-border-active: #3FAFFF;
+@f-tabs-content-color: @f-text-color;
+ //卡片类型
+@f-tabs-card-color: @f-text-explain-color;
+@f-tabs-card-color-hover: @f-text-color;
+@f-tabs-card-color-active: @f-text-color;
+@f-tabs-card-border: @f-line-color;
+@f-tabs-card-border-active: #142650;
+
+
+//加载
+@f-loading-bg: rgba(0,0,0,.7);
+
+//树
+@f-tree-color: @f-text-color;
+@f-tree-color-hover: @f-text-color-active;
+@f-tree-bg: transparent;
+@f-tree-node-bg-hover: transparent;
+@f-tree-node-bg-focus: transparent;
+
+//消息提示
+@f-msg-color: #FFF;
+@f-msg-ico-color: rgba(255,255,255,0.7);
+@f-msg-ico-font-size: 20px;
+@f-msg-info-bg: fade(@f-info-color,90%);
+@f-msg-info-border: @f-info-color;
+@f-msg-success-bg: fade(@f-success-color,90%);
+@f-msg-success-border: @f-success-color;
+@f-msg-warning-bg: fade(@f-warning-color,90%);
+@f-msg-warning-border: @f-warning-color;
+@f-msg-error-bg: fade(@f-error-color,90%);
+@f-msg-error-border: @f-error-color;
+
+//弹框
+@f-dialog-color: @f-text-color;
+@f-dialog-bg: #142650;
+@f-dialog-line: #34456F; //标题/页尾分割线
+@f-dialog-title-font-size: @f-font-size-base;
+@f-dialog-close-ico-color: @f-btn-info-color;
+@f-dialog-close-ico-color-hover: @f-btn-info-color-hover;
+@f-dialog-height: 566/192rem;  //dialog 1920内容最大高度
+@f-dialog-height-min: 400px;  //dialog 1366内容最大高度(不使用自适应)
+@f-dialog-tips-color:red;//弹窗提示tips的颜色
+@f-dialog-subtitle-bg:@f-colorpicker-bg;//弹窗副标题的背景颜色
+
+//询问框
+@f-confirm-color: @f-text-color;
+@f-confirm-bg: @f-main-sub-color;
+@f-confirm-border: @f-main-sub-color;
+@f-confirm-border-radius: @f-border-radius-medium;
+
+//分割线
+@f-divider-color: @f-line-color;
+
+//上传组件
+@f-upload-bg: @f-main-bg;
+@f-upload-bg-hover: yellow;
+@f-upload-border-color: @f-line-color;
+@f-upload-border-color-hover: @f-line-sub-color;
+
+//滑块
+@f-slider-bg: #0070C0; //滑块线背景色
+@f-slider-bg-active: #1E3059; //滑块线背景色
+@f-slider-marks-text: @f-text-explain-color; //标注文字
+@f-slider-btn-bg: #FFF; //滑块圆圈背景
+@f-slider-btn-border: #3FAFFF; //滑块圆圈边框
+@f-slider-bg-disable: #164073; //禁用滑块背景色
+@f-slider-bg-active-disable: #1e3059; //滑块线背景色
+@f-slider-btn-bg-disable: #999; //禁用按钮背景色
+@f-slider-btn-border-disable: #666; // 禁用按钮边框颜色
+
+//菜单
+@f-menu-bg: transparent;
+@f-menu-color: #FFF;
+@f-menu-color-active: @f-text-color-active;
+@f-menu-border-active: #3FAFFF;
+@f-menu-item-bg: #1D3B78;
+@f-menu-item-color: @f-text-color;
+@f-menu-item-color-active: @f-text-color-active;
+
+//滚动条样式（谷歌）width:24px;
+@f-scroll-background-color     :#0C1E4A; //滚动条凹槽背景色
+@f-scroll-line-color           :@switch-bg; //滚动条的颜色
+@f-scroll-track-box-shadow           :rgba(0,0,0,0.2); //滚动条里面轨道的阴影的颜色
+@f-scroll-track-background-color           :rgba(0,0,0,0.1); //滚动条里面轨道的颜色
+
+//报警中心
+@f-alarm-center-card-hover-border-color : linear-gradient( rgba(114, 128, 158, 0.2),#3fafffFF,rgba(114, 128, 158, 0.2));//卡片hover边框
+@f-alarm-center-card-color : rgba(180, 215, 240, 1);//卡片字体
+@f-alarm-center-card-left-color : #568BBF;//卡片左边字体
+@f-alarm-center-card-header-right-color : rgba(255, 255, 255, .1);//卡片头部右上角颜色
+@f-alarm-center-card-popover-color : #03103000;//卡片popover背景色
+@f-alarm-center-card-popover-hover-color : #04142B;//卡片popover hover背景色
+@f-alarm-center-card-popover-hover-border-color : #0e2e6a;//卡片popover hover边框色
+@f-alarm-center-card-popover-hover-border-color : #142650;//卡片popover hover边框色
+@f-alarm-center-card-small-btn-border-color : #11347A;//卡片popover hover小按钮边框色
+@f-alarm-center-card-small-btn-hover-bg-color : #2790DB;//卡片popover hover小按钮背景色
+@f-alarm-center-card-percent-color : #F35D47;//卡片百分比字体色
+@f-alarm-center-card-popover-hover-triangle-bg-color  : #142650;//卡片popover hover小按钮背景色
+@f-alarm-center-card-popover-pending-color  : #3FAFFF;//卡片待审字体颜色
+@f-alarm-center-card-icon-border-color  : @f-border-color;//卡片图标边框
+@f-alarm-center-card-icon-color  : #3FAFFF;//卡片图标边框
+@f-alarm-center-card-icon-bg-color  : rgba(1,14,46,0.5);//卡片图标边框
+@f-alarm-center-card-rightClick-bg-color  : #010E2E;//右键单击背景色
+@f-alarm-center-card-rightClick-hover-color  : #142650;//右键单击背景色
+//检索公共组件
+@f-menuFilterTable-bg: @main-sub-color; //检索框
+@f-menuFilterTable-border-radius: @border-radius-medium;
+@f-menuFilterTable-font-size: @font-size-base;
+@f-menuFilterTable-title-bg: #20325E; //检索框标题
+@f-menuFilterTable-title-color: @text-color;
+@f-menuFilterTable-title-color-disabled: fade(@text-color, 70%);
+@f-menuFilterTable-title-font-size: @font-size-medium;
+@f-menuFilterTable-table-btn-line: #3FAFFF; //@btn-info-color;表格间按钮间隔线,颜色应与文字按钮色保持一致,规范不允许套用
+
+//提示框
+@f-popover-arrow-bg     : rgba(1, 14, 46, 0.7); // popover 三角箭头背景色
+
+// 数据智搜
+@f-search-bg: #010E2E;//  智搜背景色
+@f-search-gradient-border: linear-gradient(to left, rgba(114, 128, 158, 0.2),#0070C0,rgba(114, 128, 158, 0.2)); // 智搜渐变边框
+@f-search-card-hover-border: #3FAFFF; // 智搜卡片hover边框
+@f-search-card-track: #f2ae18; // 智搜人脸人体关联
+
+// left-menu
+@f-left-menu-active-border: linear-gradient(180deg,rgba(63,175,255,1) 0%,rgba(112,223,255,1) 100%); // 当前tab项边框颜色
+
+// 图上作战
+@f-mapBattle-messageBox-bg: rgba(20, 38, 80, 0.7); // 消息弹窗背景色
