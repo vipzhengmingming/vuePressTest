@@ -1,7 +1,7 @@
 module.exports = {
     title: '郑明明的博客',
     description: '郑明明的博客',
-    base: "/docs",
+    base: "/vuePressTest/",
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
